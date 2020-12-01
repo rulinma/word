@@ -56,6 +56,7 @@
 		E3EB2D6A25766C5F001DEBCC /* word */ = {
 			isa = PBXGroup;
 			children = (
+				E3EB2D802576706D001DEBCC /* rulinma */,
 				E3EB2D6B25766C5F001DEBCC /* AppDelegate.swift */,
 				E3EB2D6D25766C5F001DEBCC /* ViewController.swift */,
 				E3EB2D6F25766C5F001DEBCC /* Main.storyboard */,
@@ -65,6 +66,37 @@
 				E3EB2D7225766C5F001DEBCC /* word.xcdatamodeld */,
 			);
 			path = word;
+			sourceTree = "<group>";
+		};
+		E3EB2D802576706D001DEBCC /* rulinma */ = {
+			isa = PBXGroup;
+			children = (
+				E3EB2D832576708E001DEBCC /* common */,
+				E3EB2D8225767087001DEBCC /* controller */,
+				E3EB2D812576707F001DEBCC /* model */,
+			);
+			path = rulinma;
+			sourceTree = "<group>";
+		};
+		E3EB2D812576707F001DEBCC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E3EB2D8225767087001DEBCC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3EB2D832576708E001DEBCC /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.red
         UINavigationBar.appearance().tintColor = UIColor.white
         
+        let version =  "版本: " + AppInfo.getSoftwareVersion();
+        
+        NSLog(version)
+        
         return true
     }
 

@@ -73,16 +73,8 @@
 			children = (
 				E3EB2D832576708E001DEBCC /* common */,
 				E3EB2D8225767087001DEBCC /* controller */,
-				E3EB2D812576707F001DEBCC /* model */,
 			);
 			path = rulinma;
-			sourceTree = "<group>";
-		};
-		E3EB2D812576707F001DEBCC /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		E3EB2D8225767087001DEBCC /* controller */ = {

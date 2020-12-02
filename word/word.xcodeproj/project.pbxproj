@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E3EB2D6C25766C5F001DEBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D6B25766C5F001DEBCC /* AppDelegate.swift */; };
-		E3EB2D6E25766C5F001DEBCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D6D25766C5F001DEBCC /* ViewController.swift */; };
 		E3EB2D7125766C5F001DEBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EB2D6F25766C5F001DEBCC /* Main.storyboard */; };
 		E3EB2D7425766C5F001DEBCC /* word.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D7225766C5F001DEBCC /* word.xcdatamodeld */; };
 		E3EB2D7625766C61001DEBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EB2D7525766C61001DEBCC /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		E3EB2D6825766C5F001DEBCC /* word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = word.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EB2D6B25766C5F001DEBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3EB2D6D25766C5F001DEBCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3EB2D7025766C5F001DEBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3EB2D7325766C5F001DEBCC /* word.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = word.xcdatamodel; sourceTree = "<group>"; };
 		E3EB2D7525766C61001DEBCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			children = (
 				E3EB2D802576706D001DEBCC /* rulinma */,
 				E3EB2D6B25766C5F001DEBCC /* AppDelegate.swift */,
-				E3EB2D6D25766C5F001DEBCC /* ViewController.swift */,
 				E3EB2D6F25766C5F001DEBCC /* Main.storyboard */,
 				E3EB2D7525766C61001DEBCC /* Assets.xcassets */,
 				E3EB2D7725766C61001DEBCC /* LaunchScreen.storyboard */,
@@ -175,7 +172,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EB2D872577C77E001DEBCC /* HomeViewController.swift in Sources */,
-				E3EB2D6E25766C5F001DEBCC /* ViewController.swift in Sources */,
 				E3EB2D8525767EFB001DEBCC /* AppInfo.swift in Sources */,
 				E3EB2D892577C8EB001DEBCC /* SearchViewController.swift in Sources */,
 				E3EB2D8B2577C94B001DEBCC /* ProfileViewController.swift in Sources */,

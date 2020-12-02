@@ -14,7 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    // 创建TabBar数组
+    var tabs = ["首页", "个人中心", "更多"]
+    var images = ["Search", "Index", "Profile"]
+    var selectedImages = ["SearchSelected", "IndexSelected", "ProfileSelected"]
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -24,6 +28,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let version =  "版本: " + AppInfo.getSoftwareVersion();
         
         NSLog(version)
+        
+        let search = SearchViewController()
+        let SearchNC = UINavigationController.init(rootViewController: search)
+        
+        // 改变图片 保证图片不失真
+        let searchImage = UIImage(named:"Search")?.withRenderingMode(.alwaysOriginal)
+        let searchSelectImage = UIImage(named:"SearchSelected")?.withRenderingMode(.alwaysOriginal)
+        SearchNC.tabBarItem = UITabBarItem.init(title: "搜索", image: searchImage, selectedImage: searchSelectImage)
+        
+        let home = HomeViewController()
+        let HomeNC = UINavigationController.init(rootViewController: home)
+        let homeImage = UIImage(named:images[1])?.withRenderingMode(.alwaysOriginal)
+        let homeSelectImage = UIImage(named:selectedImages[1])?.withRenderingMode(.alwaysOriginal)
+
+        HomeNC.tabBarItem = UITabBarItem.init(title: "首页", image: homeImage, selectedImage: homeSelectImage)
+        
+        let profile = ProfileiewController()
+        let ProfileNC = UINavigationController.init(rootViewController: profile)
+        
+        // 改变图片 保证图片不失真
+        let profileImage = UIImage(named:images[2])?.withRenderingMode(.alwaysOriginal)
+        let profileSelectImage = UIImage(named:selectedImages[2])?.withRenderingMode(.alwaysOriginal)
+        
+        ProfileNC.tabBarItem = UITabBarItem.init(title: "我", image: profileImage, selectedImage: profileSelectImage)
+        
+        let navArray = [SearchNC, HomeNC, ProfileNC]
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = navArray
+        tabBarController.selectedIndex = 1
+        self.window?.rootViewController = tabBarController
+        
+        self.window!.makeKeyAndVisible()
         
         return true
     }

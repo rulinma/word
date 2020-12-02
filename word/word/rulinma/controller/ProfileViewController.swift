@@ -17,6 +17,10 @@ class ProfileiewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "我"
         self.view.backgroundColor = UIColor.blue
+        
+        // tableViewController setting & NavigationController
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

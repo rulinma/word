@@ -16,6 +16,7 @@
 		E3EB2D872577C77E001DEBCC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D862577C77E001DEBCC /* HomeViewController.swift */; };
 		E3EB2D892577C8EB001DEBCC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D882577C8EB001DEBCC /* SearchViewController.swift */; };
 		E3EB2D8B2577C94B001DEBCC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D8A2577C94B001DEBCC /* ProfileViewController.swift */; };
+		E3EB2D8D2577DBD4001DEBCC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D8C2577DBD4001DEBCC /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E3EB2D862577C77E001DEBCC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E3EB2D882577C8EB001DEBCC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E3EB2D8A2577C94B001DEBCC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E3EB2D8C2577DBD4001DEBCC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				E3EB2D862577C77E001DEBCC /* HomeViewController.swift */,
 				E3EB2D882577C8EB001DEBCC /* SearchViewController.swift */,
 				E3EB2D8A2577C94B001DEBCC /* ProfileViewController.swift */,
+				E3EB2D8C2577DBD4001DEBCC /* AboutViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				E3EB2D872577C77E001DEBCC /* HomeViewController.swift in Sources */,
 				E3EB2D8525767EFB001DEBCC /* AppInfo.swift in Sources */,
+				E3EB2D8D2577DBD4001DEBCC /* AboutViewController.swift in Sources */,
 				E3EB2D892577C8EB001DEBCC /* SearchViewController.swift in Sources */,
 				E3EB2D8B2577C94B001DEBCC /* ProfileViewController.swift in Sources */,
 				E3EB2D7425766C5F001DEBCC /* word.xcdatamodeld in Sources */,

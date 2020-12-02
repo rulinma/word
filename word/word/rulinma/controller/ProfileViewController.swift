@@ -58,6 +58,10 @@ class ProfileiewController: UITableViewController {
     override func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         NSLog("section: "  + String(indexPath.section) + " row: " + String(indexPath.row))
         // viewController show
+        
+        let aboutViewController = AboutViewController();
+        
+        self.navigationController?.pushViewController(aboutViewController, animated: true)
     }
     
 }

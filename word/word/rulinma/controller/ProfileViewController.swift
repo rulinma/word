@@ -45,7 +45,19 @@ class ProfileiewController: UITableViewController {
         
         cell.textLabel?.text = "test and section: " + String(indexPath.section) + " row: " + String(indexPath.row)
         
+        // > arrow
+        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        
         return cell
+    }
+    
+    override func tableView(_: UITableView, heightForRowAt: IndexPath) -> CGFloat {
+        return CGFloat(40)
+    }
+    
+    override func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("section: "  + String(indexPath.section) + " row: " + String(indexPath.row))
+        // viewController show
     }
     
 }

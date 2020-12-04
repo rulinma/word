@@ -15,7 +15,7 @@ class ProfileiewController: UITableViewController {
         super.viewDidLoad()
         NSLog("profile view startup")
         // Do any additional setup after loading the view.
-        self.title = "我"
+        self.title = "我的"
         self.view.backgroundColor = UIColor.blue
         
         // tableViewController setting & NavigationController

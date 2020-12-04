@@ -46,16 +46,24 @@ class ProfileiewController: UITableViewController {
         cell.textLabel?.text = "test and section: " + String(indexPath.section) + " row: " + String(indexPath.row)
         
         // > arrow
-        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        if(indexPath.section == 1 && indexPath.row == 1 ) {
+            cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+            cell.backgroundColor = UIColor(hexString: "#FF00FF")
+        }
         
         return cell
     }
     
-    override func tableView(_: UITableView, heightForRowAt: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if(indexPath.section == 0  && indexPath.row == 0) {
+            NSLog("table height \(indexPath.row)")
+            return CGFloat(120)
+        }
+        
         return CGFloat(40)
     }
     
-    override func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         NSLog("section: "  + String(indexPath.section) + " row: " + String(indexPath.row))
         // viewController show
         

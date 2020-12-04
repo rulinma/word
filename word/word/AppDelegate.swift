@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let profileImage = UIImage(named:images[2])?.withRenderingMode(.alwaysOriginal)
         let profileSelectImage = UIImage(named:selectedImages[2])?.withRenderingMode(.alwaysOriginal)
         
-        ProfileNC.tabBarItem = UITabBarItem.init(title: "我", image: profileImage, selectedImage: profileSelectImage)
+        ProfileNC.tabBarItem = UITabBarItem.init(title: "我的", image: profileImage, selectedImage: profileSelectImage)
         
         let navArray = [SearchNC, HomeNC, ProfileNC]
         let tabBarController = UITabBarController()

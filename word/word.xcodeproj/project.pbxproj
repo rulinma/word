@@ -17,6 +17,7 @@
 		E3EB2D892577C8EB001DEBCC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D882577C8EB001DEBCC /* SearchViewController.swift */; };
 		E3EB2D8B2577C94B001DEBCC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D8A2577C94B001DEBCC /* ProfileViewController.swift */; };
 		E3EB2D8D2577DBD4001DEBCC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D8C2577DBD4001DEBCC /* AboutViewController.swift */; };
+		E3EB2D8F257A75EF001DEBCC /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2D8E257A75EF001DEBCC /* UIColorExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E3EB2D882577C8EB001DEBCC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E3EB2D8A2577C94B001DEBCC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E3EB2D8C2577DBD4001DEBCC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E3EB2D8E257A75EF001DEBCC /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E3EB2D8425767EFB001DEBCC /* AppInfo.swift */,
+				E3EB2D8E257A75EF001DEBCC /* UIColorExt.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				E3EB2D8B2577C94B001DEBCC /* ProfileViewController.swift in Sources */,
 				E3EB2D7425766C5F001DEBCC /* word.xcdatamodeld in Sources */,
 				E3EB2D6C25766C5F001DEBCC /* AppDelegate.swift in Sources */,
+				E3EB2D8F257A75EF001DEBCC /* UIColorExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

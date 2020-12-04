@@ -28,9 +28,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let version =  "版本: " + AppInfo.getSoftwareVersion();
         
         NSLog(version)
-        
+        // 获取沙盒根目录
         let homeDir = NSHomeDirectory() as String
         NSLog("homeDir: %@" , homeDir)
+        
+        // 获取tmp 目录
+        let tmpDir = NSTemporaryDirectory() as String
+        NSLog("tmpDir: %@" , tmpDir)
+        
+        // 获取用户文档目录路径
+        let manager = FileManager.default
+        let urlForDocument = manager.urls(for: .documentDirectory, in:.userDomainMask)
+        let url = urlForDocument[0] as URL
+        print("url: %@" , url)
+        
+        let filePath:String = NSHomeDirectory() + "/Documents/record.txt"
+        let info = "欢迎来到ai word"
+        try! info.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
+     
+        let urlsForDocDirectory = manager.urls(for: .documentDirectory, in:.userDomainMask)
+        let docPath = urlsForDocDirectory[0]
+        let file = docPath.appendingPathComponent("record.txt")
+        
+        // 方法1
+        let readHandler = try! FileHandle(forReadingFrom:file)
+        let data = readHandler.readDataToEndOfFile()
+        let readString = String(data: data, encoding: String.Encoding.utf8)
+        print("文件内容: \(readString)")
         
         let search = SearchViewController()
         let SearchNC = UINavigationController.init(rootViewController: search)

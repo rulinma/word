@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NSLog(version)
         
+        let homeDir = NSHomeDirectory() as String
+        NSLog("homeDir: %@" , homeDir)
+        
         let search = SearchViewController()
         let SearchNC = UINavigationController.init(rootViewController: search)
         

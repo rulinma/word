@@ -42,6 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = urlForDocument[0] as URL
         print("url: %@" , url)
         
+        // write
         let filePath:String = NSHomeDirectory() + "/Documents/record.txt"
         let info = "欢迎来到ai word"
         try! info.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
@@ -50,11 +51,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let docPath = urlsForDocDirectory[0]
         let file = docPath.appendingPathComponent("record.txt")
         
-        // 方法1
+        // read
         let readHandler = try! FileHandle(forReadingFrom:file)
         let data = readHandler.readDataToEndOfFile()
         let readString = String(data: data, encoding: String.Encoding.utf8)
         print("文件内容: \(readString)")
+        
+        // remove
+        let srcUrl = filePath
+        try! manager.removeItem(atPath: srcUrl)
         
         let search = SearchViewController()
         let SearchNC = UINavigationController.init(rootViewController: search)

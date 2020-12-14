@@ -29,11 +29,11 @@ class HomeViewController: UIViewController {
         let imgClick = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped));
         imageView.addGestureRecognizer(imgClick);
         imageView.isUserInteractionEnabled = true
-
+        
         view.addSubview(imageView)
         
         // imageView 添加点击事件
-
+        
         // 显示另外的subview
     }
     
@@ -51,7 +51,7 @@ class HomeViewController: UIViewController {
         // add new view
         // subview
         // click show imageView
-   
+        
         // view.backgroundColor = UIColor.yellowColor()
         let uiLable = UILabel(frame: CGRect(x: 100, y:100, width: 200, height: 200))
         uiLable.textAlignment = NSTextAlignment.center;
@@ -74,7 +74,7 @@ class HomeViewController: UIViewController {
         
         let im = sender.view as? UILabel
         im?.isHidden = true;
-    
+        
         let imageName = "Splash.png"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)

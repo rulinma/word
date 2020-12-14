@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
+    //    var  imageView: UIImageView
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +19,41 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "首页"
         self.view.backgroundColor = UIColor.red
+        
+        // add subview to show image
+        let imageName = "Splash.png"
+        let image = UIImage(named: imageName)
+        let  imageView = UIImageView(image: image!)
+        imageView.frame = CGRect(x: 100, y: 100, width: 200, height: 200)
+        
+        let imgClick = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped));
+        imageView.addGestureRecognizer(imgClick);
+        imageView.isUserInteractionEnabled = true
+        
+        view.addSubview(imageView)
+        
+        // imageView 添加点击事件
+        
+        // 显示另外的subview
+        
     }
+    
+    // 点击事件方法
+    @objc func imageTapped(sender: UITapGestureRecognizer) -> Void {
+        NSLog("imageTapped")
+        if sender.state == .ended {
+            print("UIImageView tapped")
+        }
+        
+        let im = sender.view as? UIImageView
+        im?.isHidden = true;
+        // show word exp view
+        
+        // add new view
+        // subview
+        // click show imageView
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
